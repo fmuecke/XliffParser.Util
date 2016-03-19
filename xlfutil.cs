@@ -1,4 +1,4 @@
-﻿namespace MUITool.xlf2resx
+﻿namespace fmdev
 {
     using System;
     using System.Collections.Generic;
@@ -8,7 +8,7 @@
     using System.Threading.Tasks;
     using CommandLine;
 
-    internal class xlf2resx
+    internal class xlfutil
     {
         private static int Main(string[] args)
         {
@@ -119,7 +119,7 @@
             public string XlfFile { get; set; }
         }
 
-        [Verb("write", HelpText = "Write XLF translation data to specified .resx output file.")]
+        [Verb("write-target", HelpText = "Write XLF translation data to specified .resx output file.")]
         private class WriteOptions
         {
             [Option('x', "xlf", Required = true, HelpText = "xlf input file")]
